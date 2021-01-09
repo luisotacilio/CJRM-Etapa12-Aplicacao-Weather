@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Informações do Clima</h2>
+        <p class="subtitulo">Insira o nome de uma cidade</p>
+        <form>
+          <input
+            name="city"
+            type="text"
+               />
+        </form>
+
+        <div class="midleCard">
+          <img src="../img/mapaMundi.jpg" />
+        </div>
+
+        <div class="bottomCard">
+          <p data-js="dd-mm-yyyy"></p>
+          <p data-js="city-name"></p>
+          <img data-js="icon-weather" />
+          <p data-js="city-weather"></p>
+          <p class="fontM" data-js="city-temperature"></p>
+        </div>
+
+      </div>
+    </div>
+    <script src="./js/weather.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
